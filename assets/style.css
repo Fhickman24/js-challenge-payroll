@@ -111,6 +111,10 @@ button[disabled] {
   background: #c0c7cf;
 }
 
+#add-employee-btn {
+  margin: 16px 0px 0px 0px;
+}
+
 .float-right {
   float: right;
 }
