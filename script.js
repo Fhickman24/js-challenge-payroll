@@ -24,7 +24,7 @@ while(addMoreEmployees){
   };
 
   //Add the employee object to the employees array
-  employees.push(employee);
+  employee.push(employee);
 
   //Prompt the user to see if they want to add another employee
   let addMore = prompt("Would you like to add another employee? (yes or no)");
@@ -37,7 +37,30 @@ while(addMoreEmployees){
 let employeeArray = collectEmployees();
 console.log(employeeArray);
 
+// Display the average salary
+const displayAverageSalary = function(employeesArray) {
+  // TODO: Calculate and display the average salary
+  let totalSalary = 0;
 
+  //Calculate the total salary
+  employeesArray.forEach(employee => {
+    totalSalary += employee.salary;
+  });
+
+  //Calculate the average salary
+  const averageSalary = totalSalary / employeesArray.length;
+
+  //log the average salary and number of employees
+  console.log(`The average employee salary between our ${employeesArray.length} employee(s) is $${averageSalary.toFixed(2)}`);
+};
+
+
+// Select a random employee
+const getRandomEmployee = function(employeesArray) {
+  // TODO: Select and display a random employee
+}
+
+/*
 ====================
 STARTER CODE
 Do not modify any of the code below this line:
